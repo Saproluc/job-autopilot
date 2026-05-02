@@ -5,12 +5,12 @@
 
 # ── Personal Information ────────────────────────────────────
 personal:
-  full_name: "Satyapramod"
-  email: "nsatyapramod@gmail.com"
-  phone: "7742324060"
-  location: "Worcester,MA"
-  linkedin: "https://www.linkedin.com/in/satyapramod-nandikolmath-995024299/"
-  github: "https://github.com/Saproluc"
+  full_name: "Your Full Name"
+  email: "you@email.com"
+  phone: "555-000-0000"
+  location: "City, State"
+  linkedin: "linkedin.com/in/yourprofile"
+  github: ""
   portfolio: ""                    # Optional: your portfolio URL
   work_authorization: "OPT/STEM"  # e.g. US Citizen, H1B, OPT/STEM, Green Card
 
@@ -93,10 +93,10 @@ ai:
   cover_letter_tone: "professional"  # professional / conversational / enthusiastic
   # Extra context about yourself for Claude to use in resume/cover letters
   personal_bio: |
-    Experienced IT professional with an MS in Information Technology.
-    Strong background in AWS, Azure, Python, SQL, Power BI, and CI/CD.
-    Currently on STEM OPT seeking cloud/DevOps/BA roles.
-    GPA 3.8 from Clark University, Worcester MA.
+    Experienced professional with a Masters degree in Information Technology.
+    Strong background in cloud technologies, scripting, and data analysis.
+    Currently seeking cloud/DevOps/BA roles.
+    Strong academic background.
 
 # ── Output Settings ─────────────────────────────────────────
 output:
