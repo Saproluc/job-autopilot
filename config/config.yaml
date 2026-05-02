@@ -1,0 +1,107 @@
+# ============================================================
+#  Job AutoPilot — User Configuration
+#  Edit this file with your info and job preferences
+# ============================================================
+
+# ── Personal Information ────────────────────────────────────
+personal:
+  full_name: "Satyapramod"
+  email: "nsatyapramod@gmail.com"
+  phone: "7742324060"
+  location: "Worcester,MA"
+  linkedin: "https://www.linkedin.com/in/satyapramod-nandikolmath-995024299/"
+  github: "https://github.com/Saproluc"
+  portfolio: ""                    # Optional: your portfolio URL
+  work_authorization: "OPT/STEM"  # e.g. US Citizen, H1B, OPT/STEM, Green Card
+
+# ── Job Search Preferences ──────────────────────────────────
+job_search:
+  titles:
+    - "Cloud Support Engineer"
+    - "DevOps Engineer"
+    - "Business Analyst IT"
+    - "Cloud Engineer"
+    - "IT Analyst"
+    - "Systems Administrator"
+
+  locations:
+    - "Remote"
+    - "Boston, MA"
+    - "New York, NY"
+    - "Chicago, IL"
+    - "Austin, TX"
+
+  # Must-have keywords in job description
+  keywords:
+    - "AWS"
+    - "Azure"
+    - "cloud"
+
+  # Jobs containing these phrases will be skipped
+  exclude_keywords:
+    - "10+ years"
+    - "security clearance"
+    - "Top Secret"
+    - "Sr. Director"
+
+  # entry / mid / senior
+  experience_level: "mid"
+
+  # full_time / part_time / contract / internship
+  job_type: "full_time"
+
+  # Only apply to companies that sponsor visas (OPT/H1B friendly)
+  sponsorship_required: false
+
+  # E-Verify required for OPT/STEM students
+  everify_preferred: true
+
+  # Max salary expectation (used for filtering)
+  salary_min: 70000
+  salary_max: 130000
+
+  # Max applications per day (hard cap: 50)
+  daily_limit: 50
+
+  # Skip companies you've already applied to
+  skip_applied: true
+
+# ── Platforms to Search ─────────────────────────────────────
+platforms:
+  linkedin:
+    enabled: true
+    easy_apply_only: false      # true = only LinkedIn Easy Apply jobs
+  indeed:
+    enabled: true
+  glassdoor:
+    enabled: true
+  dice:
+    enabled: true               # Great for tech / OPT / H1B roles
+
+# ── Browser Behavior ────────────────────────────────────────
+browser:
+  headless: false               # false = watch Claude work in Chrome
+  slow_mo: 800                  # ms between clicks (be polite to servers)
+  page_load_timeout: 30         # seconds
+  tab_pause_seconds: 5          # pause before opening next tab
+  max_tabs_open: 10             # how many tabs to leave open at once
+
+# ── AI Settings ─────────────────────────────────────────────
+ai:
+  model: "claude-sonnet-4-20250514"
+  resume_style: "modern"        # modern / traditional / creative
+  cover_letter_tone: "professional"  # professional / conversational / enthusiastic
+  # Extra context about yourself for Claude to use in resume/cover letters
+  personal_bio: |
+    Experienced IT professional with an MS in Information Technology.
+    Strong background in AWS, Azure, Python, SQL, Power BI, and CI/CD.
+    Currently on STEM OPT seeking cloud/DevOps/BA roles.
+    GPA 3.8 from Clark University, Worcester MA.
+
+# ── Output Settings ─────────────────────────────────────────
+output:
+  resumes_dir: "output/resumes"
+  cover_letters_dir: "output/cover_letters"
+  logs_dir: "output/logs"
+  applications_db: "output/applications.json"
+  open_folder_when_done: true   # Open output folder after run
